@@ -10,7 +10,6 @@ public class Main {
         sp.addObserver(monitor);
 
         //Driving at different speeds...
-
         sp.setCurrentSpeed(50);
         sp.setCurrentSpeed(70);
         sp.setCurrentSpeed(40);
