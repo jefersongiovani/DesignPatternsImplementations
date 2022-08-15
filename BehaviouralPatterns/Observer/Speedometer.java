@@ -1,11 +1,17 @@
 import java.util.Observable;
 
+/**
+ * Class that represents the speedometer itself
+ * This class registers the actual speed and notify the "listeners" about the change * *
+ */
 public class Speedometer extends Observable {
-    private int currentSpeed = 0;
 
+    //Private variables
+    private int currentSpeed;
+
+    //Constructor
     public Speedometer(){
-       // this.currentSpeed = 0;
-
+       this.currentSpeed = 0;
     }
 
     /**
@@ -21,6 +27,10 @@ public class Speedometer extends Observable {
 
     }
 
+    /**
+     * Sets the current speed*
+     * @return int. The current speed.
+     */
     public int getCurrentSpeed(){
         return this.currentSpeed;
 
